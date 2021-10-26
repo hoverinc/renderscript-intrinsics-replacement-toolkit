@@ -238,6 +238,28 @@ object Toolkit {
         return outputBitmap
     }
 
+    //========= HOVER change begin =========
+    /**
+     * Same as blur() with an input Bitmap, but instead allow for re-using an existing output Bitmap
+     */
+    @JvmOverloads
+    fun blur(
+        inputBitmap: Bitmap,
+        outputBitmap: Bitmap,
+        radius: Int = 5,
+        restriction: Range2d? = null
+    ): Bitmap {
+        validateBitmap("blur", inputBitmap)
+        require(radius in 1..25) {
+            "$externalName blur. The radius should be between 1 and 25. $radius provided."
+        }
+        validateRestriction("blur", inputBitmap.width, inputBitmap.height, restriction)
+        validateBitmap("blur", outputBitmap)
+        nativeBlurBitmap(nativeHandle, inputBitmap, outputBitmap, radius, restriction)
+        return outputBitmap
+    }
+    //========= HOVER change end =========
+
     /**
      * Identity matrix that can be passed to the {@link RenderScriptToolkit::colorMatrix} method.
      *
