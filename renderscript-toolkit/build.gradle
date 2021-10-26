@@ -1,6 +1,35 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'maven-publish'
+}
+
+def libVersion = "0.8"
+def libGroup = "com.google.android.renderscript"
+def libId = "toolkit"
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId libGroup
+                artifactId libId
+                version libVersion
+                from components.release
+            }
+        }
+        repositories {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/hoverinc/android-capture-artifacts")
+
+                credentials {
+                    username = System.getenv("GPR_USER")
+                    password = System.getenv("GPR_API_KEY")
+                }
+            }
+        }
+    }
 }
 
 android {
