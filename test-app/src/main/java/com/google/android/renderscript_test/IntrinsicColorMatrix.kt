@@ -24,7 +24,7 @@ import android.renderscript.Script
 import android.renderscript.ScriptIntrinsicColorMatrix
 import android.renderscript.Type
 import android.renderscript.Float4
-import com.google.android.renderscript.Range2d
+import com.google.android.renderscript_hover.Range2d
 
 /**
  * Does a ColorMatrix operation using the RenderScript Intrinsics.

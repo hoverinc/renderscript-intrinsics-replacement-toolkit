@@ -22,7 +22,7 @@ import android.renderscript.RenderScript
 import android.renderscript.Script
 import android.renderscript.ScriptIntrinsicResize
 import android.renderscript.Type
-import com.google.android.renderscript.Range2d
+import com.google.android.renderscript_hover.Range2d
 
 /**
  * Does a Resize operation using the RenderScript Intrinsics.

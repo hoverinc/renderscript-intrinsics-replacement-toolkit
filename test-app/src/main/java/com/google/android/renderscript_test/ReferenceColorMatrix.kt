@@ -16,7 +16,7 @@
 
 package com.google.android.renderscript_test
 
-import com.google.android.renderscript.Range2d
+import com.google.android.renderscript_hover.Range2d
 
 /**
  * Reference implementation of a ColorMatrix operation.

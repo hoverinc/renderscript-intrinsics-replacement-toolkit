@@ -69,7 +69,7 @@ endif()
 # Gradle automatically packages shared libraries with your APK.
 
 add_library(# Sets the name of the library.
-            renderscript-toolkit
+            renderscript-toolkit-hover
             # Sets the library as a shared library.
             SHARED
             # Provides a relative path to your source file(s).
@@ -106,8 +106,7 @@ find_library(# Sets the name of the path variable.
 # build script, prebuilt third-party libraries, or system libraries.
 
 target_link_libraries(# Specifies the target library.
-                      renderscript-toolkit
-
+                      renderscript-toolkit-hover
                       cpufeatures
                       jnigraphics
                       # Links the target library to the log library

@@ -16,8 +16,8 @@
 
 package com.google.android.renderscript_test
 
-import com.google.android.renderscript.BlendingMode
-import com.google.android.renderscript.Range2d
+import com.google.android.renderscript_hover.BlendingMode
+import com.google.android.renderscript_hover.Range2d
 
 /**
  * Reference implementation of a Blend operation.

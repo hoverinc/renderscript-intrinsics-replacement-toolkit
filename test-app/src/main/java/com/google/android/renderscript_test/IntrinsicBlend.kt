@@ -23,8 +23,8 @@ import android.renderscript.RenderScript
 import android.renderscript.Script
 import android.renderscript.ScriptIntrinsicBlend
 import android.renderscript.Type
-import com.google.android.renderscript.BlendingMode
-import com.google.android.renderscript.Range2d
+import com.google.android.renderscript_hover.BlendingMode
+import com.google.android.renderscript_hover.Range2d
 
 /**
  * Does a Blend operation using the RenderScript Intrinsics.

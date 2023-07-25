@@ -23,7 +23,7 @@ import android.renderscript.RenderScript
 import android.renderscript.Script
 import android.renderscript.ScriptIntrinsicLUT
 import android.renderscript.Type
-import com.google.android.renderscript.Range2d
+import com.google.android.renderscript_hover.Range2d
 
 /**
  * Does a LookUpTable operation using the RenderScript Intrinsics.

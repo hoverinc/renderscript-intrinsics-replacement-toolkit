@@ -16,8 +16,8 @@
 
 package com.google.android.renderscript_test
 
-import com.google.android.renderscript.Range2d
-import com.google.android.renderscript.Rgba3dArray
+import com.google.android.renderscript_hover.Range2d
+import com.google.android.renderscript_hover.Rgba3dArray
 
 /**
  * Reference implementation of a 3D LookUpTable operation.

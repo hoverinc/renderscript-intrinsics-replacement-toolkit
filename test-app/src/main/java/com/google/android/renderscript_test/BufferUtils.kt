@@ -20,9 +20,9 @@ import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.renderscript.Element
 import android.renderscript.RenderScript
-import com.google.android.renderscript.Range2d
-import com.google.android.renderscript.Rgba3dArray
-import com.google.android.renderscript.YuvFormat
+import com.google.android.renderscript_hover.Range2d
+import com.google.android.renderscript_hover.Rgba3dArray
+import com.google.android.renderscript_hover.YuvFormat
 import java.nio.ByteBuffer
 import java.util.Random
 import kotlin.math.floor

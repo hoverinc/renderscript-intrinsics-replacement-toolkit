@@ -23,7 +23,7 @@ import android.renderscript.RenderScript
 import android.renderscript.Script
 import android.renderscript.ScriptIntrinsicHistogram
 import android.renderscript.Type
-import com.google.android.renderscript.Range2d
+import com.google.android.renderscript_hover.Range2d
 
 /**
  * Does a Histogram operation using the RenderScript Intrinsics.

@@ -16,7 +16,7 @@
 
 package com.google.android.renderscript_test
 
-import com.google.android.renderscript.YuvFormat
+import com.google.android.renderscript_hover.YuvFormat
 import java.lang.IllegalArgumentException
 
 /**

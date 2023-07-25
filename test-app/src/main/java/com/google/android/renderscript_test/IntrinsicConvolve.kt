@@ -24,7 +24,7 @@ import android.renderscript.Script
 import android.renderscript.ScriptIntrinsicConvolve3x3
 import android.renderscript.ScriptIntrinsicConvolve5x5
 import android.renderscript.Type
-import com.google.android.renderscript.Range2d
+import com.google.android.renderscript_hover.Range2d
 
 /**
  * Does a Convolve operation using the RenderScript Intrinsics.

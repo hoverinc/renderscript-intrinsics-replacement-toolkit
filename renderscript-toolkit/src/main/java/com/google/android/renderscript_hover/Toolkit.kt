@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.renderscript
+package com.google.android.renderscript_hover
 
 import android.graphics.Bitmap
 import java.lang.IllegalArgumentException
@@ -1112,7 +1112,7 @@ object Toolkit {
     private var nativeHandle: Long = 0
 
     init {
-        System.loadLibrary("renderscript-toolkit")
+        System.loadLibrary("renderscript-toolkit-hover")
         nativeHandle = createNative()
     }
 

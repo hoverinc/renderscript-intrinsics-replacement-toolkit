@@ -20,12 +20,12 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.renderscript.RenderScript
-import com.google.android.renderscript.BlendingMode
-import com.google.android.renderscript.LookupTable
-import com.google.android.renderscript.Range2d
-import com.google.android.renderscript.Rgba3dArray
-import com.google.android.renderscript.Toolkit
-import com.google.android.renderscript.YuvFormat
+import com.google.android.renderscript_hover.BlendingMode
+import com.google.android.renderscript_hover.LookupTable
+import com.google.android.renderscript_hover.Range2d
+import com.google.android.renderscript_hover.Rgba3dArray
+import com.google.android.renderscript_hover.Toolkit
+import com.google.android.renderscript_hover.YuvFormat
 import kotlin.math.abs
 import kotlin.math.min
 

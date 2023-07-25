@@ -22,7 +22,7 @@ import android.renderscript.Element
 import android.renderscript.RenderScript
 import android.renderscript.ScriptIntrinsicYuvToRGB
 import android.renderscript.Type
-import com.google.android.renderscript.YuvFormat
+import com.google.android.renderscript_hover.YuvFormat
 
 /**
  * Does a YUV to RGB operation using the RenderScript Intrinsics.

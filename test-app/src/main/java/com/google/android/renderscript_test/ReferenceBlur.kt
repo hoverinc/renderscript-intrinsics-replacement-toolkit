@@ -16,7 +16,7 @@
 
 package com.google.android.renderscript_test
 
-import com.google.android.renderscript.Range2d
+import com.google.android.renderscript_hover.Range2d
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.pow

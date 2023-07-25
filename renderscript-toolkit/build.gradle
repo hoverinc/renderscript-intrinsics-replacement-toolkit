@@ -4,8 +4,8 @@ plugins {
     id 'maven-publish'
 }
 
-def libVersion = "0.8"
-def libGroup = "com.google.android.renderscript"
+def libVersion = "1.0"
+def libGroup = "com.google.android.renderscript-hover"
 def libId = "toolkit"
 
 afterEvaluate {
