@@ -4,9 +4,9 @@ plugins {
     id 'maven-publish'
 }
 
-def libVersion = "1.0"
-def libGroup = "com.google.android.renderscript-hover"
-def libId = "toolkit"
+def libVersion = "1.0.0"
+def libGroup = "to.hover.capture.internal"
+def libId = "renderscript"
 
 afterEvaluate {
     publishing {
@@ -21,7 +21,7 @@ afterEvaluate {
         repositories {
             maven {
                 name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/hoverinc/android-capture-artifacts")
+                url = uri("https://maven.pkg.github.com/hoverinc/hover-capture-android")
 
                 credentials {
                     username = System.getenv("GPR_USER")
