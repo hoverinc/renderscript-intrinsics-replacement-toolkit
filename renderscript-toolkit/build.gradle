@@ -4,7 +4,7 @@ plugins {
     id 'maven-publish'
 }
 
-def libVersion = "1.0.0"
+def libVersion = "1.0.1"
 def libGroup = "to.hover.capture.internal"
 def libId = "renderscript"
 
