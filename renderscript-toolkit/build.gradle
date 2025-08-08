@@ -33,12 +33,13 @@ afterEvaluate {
 }
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion "31.0.0"
+    namespace 'com.google.android.renderscript_hover'
 
+    ndkVersion = "27.1.12297006" // It's safest to match to our Camera SDK's NDK version, but not necessarily required
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 31
+        compileSdkVersion 35
+        minSdkVersion 26
+        targetSdkVersion 35
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -66,6 +67,9 @@ android {
         cmake {
             path file('src/main/cpp/CMakeLists.txt')
         }
+    }
+    publishing {
+        singleVariant("release") {}
     }
 }
 
