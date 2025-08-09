@@ -37,9 +37,9 @@ android {
 
     ndkVersion = "27.1.12297006" // It's safest to match to our Camera SDK's NDK version, but not necessarily required
     defaultConfig {
-        compileSdkVersion 35
-        minSdkVersion 26
-        targetSdkVersion 35
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        compileSdk rootProject.compileSdkVersion
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
