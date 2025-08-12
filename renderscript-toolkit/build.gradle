@@ -4,7 +4,7 @@ plugins {
     id 'maven-publish'
 }
 
-def libVersion = "1.0.0"
+def libVersion = "1.0.1"
 def libGroup = "to.hover.capture.internal"
 def libId = "renderscript"
 
@@ -33,18 +33,20 @@ afterEvaluate {
 }
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion "31.0.0"
+    namespace 'com.google.android.renderscript_hover'
 
+    ndkVersion = "27.1.12297006" // It's safest to match to our Camera SDK's NDK version, but not necessarily required
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 31
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        compileSdk rootProject.compileSdkVersion
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++17"
+                arguments "-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON"
             }
         }
     }
@@ -66,6 +68,9 @@ android {
         cmake {
             path file('src/main/cpp/CMakeLists.txt')
         }
+    }
+    publishing {
+        singleVariant("release") {}
     }
 }
 
